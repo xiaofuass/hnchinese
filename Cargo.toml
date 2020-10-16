@@ -1,0 +1,16 @@
+[package]
+name = "hnrss"
+version = "0.1.0"
+authors = ["robot"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hyper = "0.13"
+tokio = { version = "0.2", features = ["full"] }
+curl = "0.4.34"
+rss = {version = "1.9.0",features = ["from_url"]}
+serde_json = "1.0.59"
+simple_logger = "1.11.0"
+log = { version = "^0.4.5", features = ["std"] }
